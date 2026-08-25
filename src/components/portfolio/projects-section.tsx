@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 import { SectionHeading } from "@/components/section-heading";
 import { Tag } from "@/components/tag";
 import { ProjectItem } from "@/types/project-item";
@@ -22,7 +24,7 @@ export function ProjectsSection({ items }: ProjectsSectionProps) {
               </div>
               <div className={styles.projectsSection__links}>
                 {project.links.map((link) => (
-                  <a
+                  <Link
                     className={styles.projectsSection__link}
                     key={link.label}
                     href={link.href}
@@ -32,7 +34,7 @@ export function ProjectsSection({ items }: ProjectsSectionProps) {
                     }
                   >
                     {link.label}
-                  </a>
+                  </Link>
                 ))}
               </div>
             </header>

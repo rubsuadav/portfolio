@@ -9,14 +9,23 @@ export function Navbar() {
       <header className={styles.navbar__container}>
         <div className={styles.navbar__brand}>
           <p className={styles.navbar__brandTitle}>Ruben Suarez David</p>
-          <p className={styles.navbar__brandCaption}>Junior Fullstack Developer</p>
+          <p className={styles.navbar__brandCaption}>
+            Junior Fullstack Developer
+          </p>
         </div>
 
-        <nav className={styles.navbar__links} aria-label="Secciones del portfolio">
+        <nav
+          className={styles.navbar__links}
+          aria-label="Secciones del portfolio"
+        >
           {navItems.map((item) => (
-            <a key={item.href} href={item.href} className={styles.navbar__link}>
+            <Link
+              key={item.href}
+              href={item.href}
+              className={styles.navbar__link}
+            >
               {item.label}
-            </a>
+            </Link>
           ))}
         </nav>
 

@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 import { Metric } from "@/types/metric";
 import { Profile } from "@/types/profile";
 import { SocialLink } from "@/types/social-link";
@@ -24,29 +26,36 @@ export function HeroSection({
         <p className={styles.heroSection__summary}>{profile.summary}</p>
 
         <div className={styles.heroSection__actions}>
-          <a
+          <Link
             className={styles.heroSection__actionPrimary}
             href={socialLinks[0].href}
             target="_blank"
             rel="noreferrer"
           >
             Ver LinkedIn
-          </a>
-          <a
+          </Link>
+          <Link
             className={styles.heroSection__actionSecondary}
             href={socialLinks[1].href}
             target="_blank"
             rel="noreferrer"
           >
             Ver GitHub
-          </a>
+          </Link>
         </div>
 
         <div className={styles.heroSection__metricGrid}>
           {metrics.map((metric) => (
-            <article key={metric.label} className={styles.heroSection__metricCard}>
-              <strong className={styles.heroSection__metricValue}>{metric.value}</strong>
-              <span className={styles.heroSection__metricLabel}>{metric.label}</span>
+            <article
+              key={metric.label}
+              className={styles.heroSection__metricCard}
+            >
+              <strong className={styles.heroSection__metricValue}>
+                {metric.value}
+              </strong>
+              <span className={styles.heroSection__metricLabel}>
+                {metric.label}
+              </span>
             </article>
           ))}
         </div>
@@ -59,12 +68,14 @@ export function HeroSection({
 
         <div className={styles.heroSection__location}>
           <p className={styles.heroSection__locationLabel}>Ubicacion</p>
-          <p className={styles.heroSection__locationValue}>{profile.location}</p>
+          <p className={styles.heroSection__locationValue}>
+            {profile.location}
+          </p>
         </div>
 
         <div className={styles.heroSection__contactList}>
           {socialLinks.map((link) => (
-            <a
+            <Link
               className={styles.heroSection__contactItem}
               key={link.label}
               href={link.href}
@@ -72,10 +83,13 @@ export function HeroSection({
               rel={link.href.startsWith("http") ? "noreferrer" : undefined}
             >
               <span>{link.label}</span>
-              <span className={styles.heroSection__contactSymbol} aria-hidden="true">
+              <span
+                className={styles.heroSection__contactSymbol}
+                aria-hidden="true"
+              >
                 {"+"}
               </span>
-            </a>
+            </Link>
           ))}
         </div>
 
