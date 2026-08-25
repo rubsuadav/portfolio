@@ -1,0 +1,25 @@
+.portfolioShell {
+  position: relative;
+  width: min(1140px, calc(100% - 30px));
+  margin: 0 auto;
+  padding: 1.2rem 0 4rem;
+  display: grid;
+  gap: 2.5rem;
+}
+
+.portfolioShell__paperTexture {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 12% 4%, rgba(17, 20, 24, 0.07), transparent 22%),
+    radial-gradient(circle at 88% 0%, rgba(170, 114, 58, 0.09), transparent 20%),
+    repeating-linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.1) 0,
+      rgba(255, 255, 255, 0.1) 1px,
+      transparent 1px,
+      transparent 4px
+    );
+  opacity: 0.5;
+}
