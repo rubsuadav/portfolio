@@ -73,8 +73,8 @@ export const projects: ProjectItem[] = [
     ],
     stack: ["Node.js", "TypeScript", "MongoDB", "PostgreSQL", "MySQL", "Jest", "Supertest"],
     links: [
-      { label: "GitHub", href: "https://github.com/rubsuadav" },
-      { label: "NPM", href: "https://www.npmjs.com/" },
+      { label: "GitHub", href: "https://github.com/rubsuadav/express-api-rest-gen" },
+      { label: "NPM", href: "https://www.npmjs.com/package/express-api-rest-gen" },
     ],
   },
   {
@@ -88,7 +88,7 @@ export const projects: ProjectItem[] = [
       "Integración de Firebase para datos en tiempo real y autenticación.",
     ],
     stack: ["React", "Tailwind CSS", "Node.js", "Express", "Firebase"],
-    links: [{ label: "GitHub", href: "https://github.com/rubsuadav" }],
+    links: [{ label: "GitHub", href: "https://github.com/orgs/TFG-nicsanmen-rubsuadav/repositories" }],
   },
 ];
 
