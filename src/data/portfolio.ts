@@ -71,10 +71,25 @@ export const projects: ProjectItem[] = [
       "Generación de proyectos Node.js en JS/TS con soporte para MongoDB, PostgreSQL, MySQL y ORMs como Mongoose y Sequelize.",
       "Integración de Jest y Supertest para dejar el proyecto listo para testing desde el inicio.",
     ],
-    stack: ["Node.js", "TypeScript", "MongoDB", "PostgreSQL", "MySQL", "Jest", "Supertest"],
+    stack: [
+      { label: "Node.js", icon: "node" },
+      { label: "Express", icon: "express" },
+      { label: "TypeScript", icon: "typescript" },
+      { label: "MongoDB", icon: "mongodb" },
+      { label: "PostgreSQL", icon: "postgresql" },
+      { label: "MySQL", icon: "mysql" },
+      { label: "Jest", icon: "jest" },
+      { label: "Supertest", icon: "supertest" },
+    ],
     links: [
-      { label: "GitHub", href: "https://github.com/rubsuadav/express-api-rest-gen" },
-      { label: "NPM", href: "https://www.npmjs.com/package/express-api-rest-gen" },
+      {
+        label: "GitHub",
+        href: "https://github.com/rubsuadav/express-api-rest-gen",
+      },
+      {
+        label: "NPM",
+        href: "https://www.npmjs.com/package/express-api-rest-gen",
+      },
     ],
   },
   {
@@ -87,8 +102,19 @@ export const projects: ProjectItem[] = [
       "Frontend interactivo con React y Tailwind CSS.",
       "Integración de Firebase para datos en tiempo real y autenticación.",
     ],
-    stack: ["React", "Tailwind CSS", "Node.js", "Express", "Firebase"],
-    links: [{ label: "GitHub", href: "https://github.com/orgs/TFG-nicsanmen-rubsuadav/repositories" }],
+    stack: [
+      { label: "React", icon: "react" },
+      { label: "Tailwind CSS", icon: "tailwind" },
+      { label: "Node.js", icon: "node" },
+      { label: "Express", icon: "express" },
+      { label: "Firebase", icon: "firebase" },
+    ],
+    links: [
+      {
+        label: "GitHub",
+        href: "https://github.com/orgs/TFG-nicsanmen-rubsuadav/repositories",
+      },
+    ],
   },
 ];
 
@@ -96,6 +122,9 @@ export const skills: SkillGroup[] = [
   {
     title: "Frontend",
     items: [
+      { label: "HTML", icon: "html" },
+      { label: "CSS", icon: "css" },
+      { label: "JavaScript", icon: "javascript" },
       { label: "Vue.js", icon: "vue" },
       { label: "Angular", icon: "angular" },
       { label: "React", icon: "react" },
@@ -108,29 +137,44 @@ export const skills: SkillGroup[] = [
     items: [
       { label: "Node.js", icon: "node" },
       { label: "Express", icon: "express" },
-      { label: "MongoDB", icon: "mongodb" },
-      { label: "Firebase", icon: "firebase" },
       { label: "REST APIs", icon: "architecture" },
+      { label: "Firebase", icon: "firebase" },
     ],
   },
   {
-    title: "Calidad y entrega",
+    title: "Bases de datos",
+    items: [
+      { label: "MongoDB", icon: "mongodb" },
+      { label: "PostgreSQL", icon: "postgresql" },
+      { label: "MySQL", icon: "mysql" },
+    ],
+  },
+  {
+    title: "Testing y DevOps",
     items: [
       { label: "Jest", icon: "jest" },
       { label: "Supertest", icon: "supertest" },
+      { label: "Git", icon: "git" },
+      { label: "GitHub", icon: "github" },
       { label: "CI/CD", icon: "cicd" },
-      { label: "Scrum", icon: "scrum" },
-      { label: "DevOps", icon: "devops" },
     ],
   },
   {
-    title: "Herramientas y foco técnico",
+    title: "Metodologías",
+    items: [
+      { label: "Scrum", icon: "scrum" },
+      { label: "Agile", icon: "scrum" },
+      { label: "Code Review", icon: "github" },
+      { label: "Pair Programming", icon: "pairing" },
+    ],
+  },
+  {
+    title: "Herramientas y especialización",
     items: [
       { label: "Open Source", icon: "opensource" },
-      { label: "GitHub Copilot", icon: "copilot" },
+      { label: "GitHub Copilot", icon: "github" },
       { label: "OpenAI API", icon: "openai" },
       { label: "Arquitectura escalable", icon: "architecture" },
-      { label: "Pair programming", icon: "pairing" },
     ],
   },
 ];
@@ -181,6 +225,6 @@ export const navItems: NavItem[] = [
   { label: "Experiencia", href: "#experiencia" },
   { label: "Proyectos", href: "#proyectos" },
   { label: "Competencias", href: "#competencias" },
-  { label: "Formación", href: "#formacion" },
+  { label: "Formación", href: "#educacion" },
   { label: "Idiomas", href: "#idiomas" },
 ];

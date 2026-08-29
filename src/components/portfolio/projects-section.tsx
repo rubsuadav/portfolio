@@ -3,6 +3,7 @@ import Link from "next/link";
 import { SectionHeading } from "@/components/section-heading";
 import { Tag } from "@/components/tag";
 import { ProjectItem } from "@/types/project-item";
+import { skillIcons } from "./skill-icons";
 
 import styles from "./projects-section.module.css";
 
@@ -46,7 +47,9 @@ export function ProjectsSection({ items }: ProjectsSectionProps) {
               aria-label={`Tecnologias de ${project.title}`}
             >
               {project.stack.map((stackItem) => (
-                <Tag key={stackItem}>{stackItem}</Tag>
+                <Tag key={stackItem.label} icon={skillIcons[stackItem.icon]}>
+                  {stackItem.label}
+                </Tag>
               ))}
             </div>
 
