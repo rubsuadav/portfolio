@@ -2,6 +2,7 @@ import { navItems, socialLinks } from "@/data/portfolio";
 
 import styles from "./navbar.module.css";
 import Link from "next/link";
+import { NavLink } from "./nav-link";
 
 export function Navbar() {
   return (
@@ -16,13 +17,13 @@ export function Navbar() {
           aria-label="Secciones del portfolio"
         >
           {navItems.map((item) => (
-            <Link
+            <NavLink
               key={item.href}
               href={item.href}
               className={styles.navbar__link}
             >
               {item.label}
-            </Link>
+            </NavLink>
           ))}
         </nav>
 
