@@ -12,7 +12,7 @@
   padding: 0.78rem 0.92rem;
   border: 1px solid var(--border);
   border-radius: 1rem;
-  background: rgba(255, 255, 255, 0.78);
+  background: rgba(15, 23, 41, 0.7);
   box-shadow: var(--shadow-sm);
   backdrop-filter: blur(14px);
 }
@@ -26,11 +26,6 @@
   color: var(--ink);
   font-weight: 800;
   letter-spacing: -0.02em;
-}
-
-.navbar__brandCaption {
-  font-size: 0.78rem;
-  color: var(--muted);
 }
 
 .navbar__links {
@@ -59,8 +54,8 @@
 
 .navbar__link {
   color: var(--muted);
-  background: rgba(16, 20, 25, 0.04);
-  border-color: rgba(16, 20, 25, 0.08);
+  background: rgba(79, 158, 255, 0.08);
+  border-color: rgba(79, 158, 255, 0.12);
 }
 
 .navbar__link:hover,
@@ -68,11 +63,13 @@
 .navbar__cta:hover,
 .navbar__cta:focus-visible {
   transform: translateY(-2px);
-  border-color: rgba(16, 20, 25, 0.26);
+  border-color: var(--accent);
+  background: rgba(79, 158, 255, 0.15);
+  color: var(--accent);
 }
 
 .navbar__cta {
-  background: var(--ink);
+  background: var(--accent);
   color: var(--paper);
   font-weight: 700;
   white-space: nowrap;

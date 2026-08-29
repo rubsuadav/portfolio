@@ -7,11 +7,16 @@
 .profileSection__contentCard {
   border-radius: 1.6rem;
   border: 1px solid var(--border);
-  background: linear-gradient(170deg, rgba(255, 255, 255, 0.93), rgba(245, 240, 230, 0.88));
+  background: linear-gradient(
+    135deg,
+    rgba(20, 28, 45, 0.5),
+    rgba(30, 40, 60, 0.3)
+  );
   box-shadow: var(--shadow-sm);
   padding: clamp(1.2rem, 2vw, 1.7rem);
   display: grid;
   gap: 0.8rem;
+  backdrop-filter: blur(10px);
 }
 
 .profileSection__paragraph {

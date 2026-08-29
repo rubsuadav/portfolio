@@ -9,8 +9,13 @@
 .heroSection__profileCard,
 .heroSection__metricCard {
   border: 1px solid var(--border);
-  background: linear-gradient(160deg, rgba(255, 255, 255, 0.92), rgba(250, 245, 237, 0.86));
+  background: linear-gradient(
+    135deg,
+    rgba(20, 28, 45, 0.5),
+    rgba(30, 40, 60, 0.3)
+  );
   box-shadow: var(--shadow-md);
+  backdrop-filter: blur(10px);
 }
 
 .heroSection__introCard {
@@ -22,7 +27,7 @@
   text-transform: uppercase;
   letter-spacing: 0.17em;
   font-weight: 700;
-  color: var(--accent-strong);
+  color: var(--accent);
   font-size: 0.72rem;
 }
 
@@ -38,7 +43,7 @@
 .heroSection__role {
   margin-top: 0.8rem;
   font-size: clamp(1.1rem, 2.4vw, 1.4rem);
-  color: var(--accent-strong);
+  color: var(--accent);
   font-weight: 700;
 }
 
@@ -68,21 +73,21 @@
 }
 
 .heroSection__actionPrimary {
-  background: var(--ink);
+  background: var(--accent);
   color: var(--paper);
 }
 
 .heroSection__actionSecondary {
-  background: rgba(16, 20, 25, 0.06);
-  border-color: rgba(16, 20, 25, 0.16);
-  color: var(--ink);
+  background: rgba(79, 158, 255, 0.1);
+  border-color: rgba(79, 158, 255, 0.2);
+  color: var(--accent);
 }
 
 .heroSection__actionPrimary:hover,
 .heroSection__actionSecondary:hover {
   transform: translateY(-2px);
-  border-color: rgba(16, 20, 25, 0.38);
-  box-shadow: 0 14px 24px rgba(16, 20, 25, 0.12);
+  border-color: var(--accent);
+  box-shadow: 0 14px 24px rgba(79, 158, 255, 0.2);
 }
 
 .heroSection__metricGrid {
@@ -99,8 +104,9 @@
 
 .heroSection__metricValue {
   display: block;
-  color: var(--ink);
+  color: var(--accent);
   font-size: 1.3rem;
+  font-weight: 800;
 }
 
 .heroSection__metricLabel {
@@ -128,7 +134,11 @@
   font-weight: 800;
   letter-spacing: -0.06em;
   color: var(--paper);
-  background: linear-gradient(150deg, #222a31, #161b21);
+  background: linear-gradient(
+    135deg,
+    var(--accent),
+    var(--accent-strong)
+  );
 }
 
 .heroSection__locationLabel {
@@ -155,28 +165,31 @@
   justify-content: space-between;
   gap: 0.5rem;
   border-radius: 0.9rem;
-  border: 1px solid rgba(16, 20, 25, 0.14);
-  background: rgba(255, 255, 255, 0.56);
+  border: 1px solid rgba(79, 158, 255, 0.15);
+  background: rgba(79, 158, 255, 0.08);
   padding: 0.72rem 0.84rem;
   color: var(--ink);
-  transition: transform 170ms ease, border-color 170ms ease;
+  transition: transform 170ms ease, border-color 170ms ease, background 170ms ease;
 }
 
 .heroSection__contactItem:hover {
   transform: translateY(-1px);
-  border-color: rgba(16, 20, 25, 0.34);
+  border-color: rgba(79, 158, 255, 0.3);
+  background: rgba(79, 158, 255, 0.12);
 }
 
 .heroSection__contactSymbol {
   font-weight: 700;
+  color: var(--accent);
 }
 
 .heroSection__note {
   margin-top: 0.2rem;
   border-radius: 1rem;
-  border: 1px dashed rgba(16, 20, 25, 0.2);
+  border: 1px dashed rgba(79, 158, 255, 0.2);
   padding: 0.9rem;
   color: var(--muted);
+  background: rgba(79, 158, 255, 0.05);
 }
 
 @media (max-width: 980px) {
