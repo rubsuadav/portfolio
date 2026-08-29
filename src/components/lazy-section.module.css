@@ -1,0 +1,11 @@
+.lazySection {
+  opacity: 0;
+  transform: translateY(60px) rotateX(90deg);
+  transition: all 900ms cubic-bezier(0.16, 1, 0.3, 1);
+  perspective: 1000px;
+}
+
+.lazySection__visible {
+  opacity: 1;
+  transform: translateY(0) rotateX(0);
+}
