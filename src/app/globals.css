@@ -1,13 +1,30 @@
 :root {
-  --paper: #f2ede3;
-  --ink: #111419;
-  --muted: #4f5965;
-  --border: rgba(17, 20, 25, 0.12);
-  --accent: #1e6f5c;
-  --accent-strong: #125a49;
-  --shadow-sm: 0 10px 28px rgba(26, 20, 13, 0.1);
-  --shadow-md: 0 20px 40px rgba(22, 17, 12, 0.14);
-  --card-bg: linear-gradient(170deg, rgba(255, 255, 255, 0.92), rgba(248, 244, 235, 0.86));
+  /* Fondo */
+  --paper: #0f1729;
+  --paper-secondary: #141c2d;
+  
+  /* Texto */
+  --ink: #e8eef2;
+  --muted: #8b95a9;
+  
+  /* Bordes */
+  --border: rgba(79, 158, 255, 0.12);
+  
+  /* Acentos */
+  --accent: #4f9eff;
+  --accent-strong: #3d7acc;
+  --accent-subtle: rgba(79, 158, 255, 0.1);
+  
+  /* Sombras */
+  --shadow-sm: 0 10px 28px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 20px 40px rgba(0, 0, 0, 0.4);
+  
+  /* Gradientes para cards */
+  --card-bg: linear-gradient(
+    135deg,
+    rgba(20, 28, 45, 0.4),
+    rgba(30, 40, 60, 0.3)
+  );
 }
 
 html {
@@ -54,9 +71,21 @@ body::before {
   inset: 0;
   pointer-events: none;
   background:
-    radial-gradient(circle at 6% 0%, rgba(30, 111, 92, 0.08), transparent 18%),
-    radial-gradient(circle at 94% 6%, rgba(177, 102, 49, 0.12), transparent 21%),
-    linear-gradient(120deg, rgba(255, 255, 255, 0.4), rgba(242, 237, 227, 0.66));
+    radial-gradient(
+      circle at 10% 5%,
+      rgba(79, 158, 255, 0.08),
+      transparent 25%
+    ),
+    radial-gradient(
+      circle at 90% 10%,
+      rgba(100, 200, 255, 0.06),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at 50% 50%,
+      rgba(79, 158, 255, 0.03),
+      transparent 60%
+    );
   opacity: 1;
 }
 
@@ -66,7 +95,7 @@ a {
 }
 
 ::selection {
-  background: rgba(30, 111, 92, 0.2);
+  background: rgba(79, 158, 255, 0.25);
   color: var(--ink);
 }
 
