@@ -91,3 +91,44 @@
     align-self: flex-start;
   }
 }
+
+@media (max-width: 600px) {
+  .navbar__container {
+    gap: 0.65rem;
+    padding: 0.7rem;
+  }
+
+  .navbar__links {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    overflow-x: auto;
+    padding-bottom: 0.15rem;
+    scrollbar-width: thin;
+    scrollbar-color: var(--accent) rgba(79, 158, 255, 0.12);
+  }
+
+  .navbar__links::-webkit-scrollbar {
+    height: 0.35rem;
+  }
+
+  .navbar__links::-webkit-scrollbar-track {
+    background: rgba(79, 158, 255, 0.12);
+    border-radius: 999px;
+  }
+
+  .navbar__links::-webkit-scrollbar-thumb {
+    background: var(--accent);
+    border-radius: 999px;
+  }
+
+  .navbar__link {
+    flex: 0 0 auto;
+    padding: 0.5rem 0.72rem;
+    font-size: 0.82rem;
+  }
+
+  .navbar__cta {
+    padding: 0.5rem 0.78rem;
+    font-size: 0.84rem;
+  }
+}
