@@ -1,4 +1,5 @@
 import Link from "next/link";
+import SlotCounter from "react-slot-counter";
 
 import { Metric } from "@/types/metric";
 import { Profile } from "@/types/profile";
@@ -51,7 +52,13 @@ export function HeroSection({
               className={styles.heroSection__metricCard}
             >
               <strong className={styles.heroSection__metricValue}>
-                {metric.value}
+                <SlotCounter
+                  value={metric.value}
+                  animateOnVisible={{
+                    triggerOnce: false,
+                    rootMargin: "0px 0px -10% 0px"
+                  }}
+                />
               </strong>
               <span className={styles.heroSection__metricLabel}>
                 {metric.label}
