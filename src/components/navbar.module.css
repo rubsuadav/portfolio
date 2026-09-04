@@ -19,15 +19,26 @@
   backdrop-filter: blur(14px);
 }
 
-.navbar__brand {
-  display: grid;
-  gap: 0.08rem;
+.navbar__menuButton {
+  display: none;
+  place-content: center;
+  gap: 0.25rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 1px solid var(--border);
+  border-radius: 0.7rem;
+  background: rgba(79, 158, 255, 0.08);
+  color: var(--ink);
+  cursor: pointer;
+  align-self: center;
 }
 
-.navbar__brandTitle {
-  color: var(--ink);
-  font-weight: 800;
-  letter-spacing: -0.02em;
+.navbar__menuButton span {
+  display: block;
+  width: 1.2rem;
+  height: 2px;
+  border-radius: 999px;
+  background: currentColor;
 }
 
 .navbar__links {
@@ -98,37 +109,36 @@
     padding: 0.7rem;
   }
 
+  .navbar__menuButton {
+    display: grid;
+  }
+
   .navbar__links {
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    overflow-x: auto;
-    padding-bottom: 0.15rem;
-    scrollbar-width: thin;
-    scrollbar-color: var(--accent) rgba(79, 158, 255, 0.12);
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    padding-top: 0.35rem;
   }
 
-  .navbar__links::-webkit-scrollbar {
-    height: 0.35rem;
-  }
-
-  .navbar__links::-webkit-scrollbar-track {
-    background: rgba(79, 158, 255, 0.12);
-    border-radius: 999px;
-  }
-
-  .navbar__links::-webkit-scrollbar-thumb {
-    background: var(--accent);
-    border-radius: 999px;
+  .navbar__linksOpen {
+    display: flex;
   }
 
   .navbar__link {
-    flex: 0 0 auto;
-    padding: 0.5rem 0.72rem;
+    width: 100%;
+    padding: 0.65rem 0.72rem;
     font-size: 0.82rem;
   }
 
   .navbar__cta {
-    padding: 0.5rem 0.78rem;
+    display: none;
+    align-self: stretch;
+    padding: 0.6rem 0.78rem;
     font-size: 0.84rem;
+  }
+
+  .navbar__ctaOpen {
+    display: inline-flex;
   }
 }

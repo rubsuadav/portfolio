@@ -60,3 +60,9 @@
     grid-template-columns: 1fr;
   }
 }
+
+@media (max-width: 560px) {
+  .educationSection__certificationList {
+    grid-template-columns: 1fr;
+  }
+}

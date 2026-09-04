@@ -1,3 +1,6 @@
+"use client";
+
+import { useState } from "react";
 import { navItems, socialLinks } from "@/data/portfolio";
 
 import styles from "./navbar.module.css";
@@ -5,16 +8,24 @@ import Link from "next/link";
 import { NavLink } from "./nav-link";
 
 export function Navbar() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   return (
     <div className={styles.navbar}>
       <header className={styles.navbar__container}>
-        <div className={styles.navbar__brand}>
-          <p className={styles.navbar__brandTitle}>Rubén Suárez David</p>
-        </div>
+        <button
+          type="button"
+          className={styles.navbar__menuButton}
+          onClick={() => setIsMenuOpen((isOpen) => !isOpen)}
+        >
+          <span />
+          <span />
+          <span />
+        </button>
 
         <nav
-          className={styles.navbar__links}
-          aria-label="Secciones del portfolio"
+          className={`${styles.navbar__links} ${isMenuOpen ? styles.navbar__linksOpen : ""}`}
+          onClick={() => setIsMenuOpen(false)}
         >
           {navItems.map((item) => (
             <NavLink
@@ -28,10 +39,11 @@ export function Navbar() {
         </nav>
 
         <Link
-          className={styles.navbar__cta}
+          className={`${styles.navbar__cta} ${isMenuOpen ? styles.navbar__ctaOpen : ""}`}
           href={socialLinks[0].href}
           target="_blank"
           rel="noreferrer"
+          onClick={() => setIsMenuOpen(false)}
         >
           Contacto
         </Link>

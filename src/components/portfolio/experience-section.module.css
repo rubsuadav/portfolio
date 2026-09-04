@@ -21,9 +21,14 @@
 
 .experienceSection__header {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
   gap: 1rem;
+}
+
+.experienceSection__header > * {
+  min-width: 0;
 }
 
 .experienceSection__title {

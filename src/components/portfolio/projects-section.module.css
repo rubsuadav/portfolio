@@ -22,9 +22,14 @@
 
 .projectsSection__header {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
   gap: 0.8rem;
+}
+
+.projectsSection__header > * {
+  min-width: 0;
 }
 
 .projectsSection__title {

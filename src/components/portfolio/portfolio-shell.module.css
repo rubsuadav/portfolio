@@ -1,8 +1,8 @@
 .portfolioShell {
   position: relative;
-  width: min(1140px, calc(100% - 30px));
+  width: min(1140px, calc(100% - 2rem));
   margin: 0 auto;
-  padding: 120px 0 6rem;
+  padding: clamp(7rem, 12vw, 7.5rem) 0 6rem;
   display: grid;
   gap: clamp(2.5rem, 4vw, 4rem);
 }
