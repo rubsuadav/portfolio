@@ -9,3 +9,10 @@
   opacity: 1;
   transform: translateY(0) rotateX(0);
 }
+
+@media (max-width: 768px) {
+  .lazySection {
+    opacity: 1;
+    transform: none;
+  }
+}
