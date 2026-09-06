@@ -3,4 +3,5 @@ export type Education = {
   subtitle: string;
   institution: string;
   period: string;
+  mark: string;
 };

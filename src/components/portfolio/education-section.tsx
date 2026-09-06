@@ -27,10 +27,12 @@ export function EducationSection({
             <p className={styles.educationSection__subtitle}>{item.subtitle}</p>
             <p className={styles.educationSection__text}>{item.institution}</p>
             <p className={styles.educationSection__text}>{item.period}</p>
+            <p className={styles.educationSection__text}>Nota: {item.mark}</p>
           </article>
         ))}
       </div>
 
+      <hr />
       <div className={styles.educationSection__certifications}>
         <p className={styles.educationSection__label}>Certificaciones</p>
         <div className={styles.educationSection__certificationList}>
