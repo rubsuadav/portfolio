@@ -24,10 +24,8 @@
 
 .educationSection__label {
   text-transform: uppercase;
-  letter-spacing: 0.13em;
-  font-size: 0.71rem;
+  /* letter-spacing: 0.13em; */
   color: var(--accent);
-  font-weight: 700;
 }
 
 .educationSection__title {
@@ -48,6 +46,7 @@
 }
 
 .educationSection__certifications {
+  margin-top: 40px;
   display: grid;
   gap: 0.8rem;
 }

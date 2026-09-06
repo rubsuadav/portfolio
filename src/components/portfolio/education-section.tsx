@@ -34,7 +34,7 @@ export function EducationSection({
 
       <hr />
       <div className={styles.educationSection__certifications}>
-        <p className={styles.educationSection__label}>Certificaciones</p>
+        <h1 className={styles.educationSection__label}>Certificaciones</h1>
         <div className={styles.educationSection__certificationList}>
           {certifications.map((certification) => (
             <article
