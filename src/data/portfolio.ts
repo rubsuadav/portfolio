@@ -214,17 +214,11 @@ export const education: Education = {
   title: "Grado en Ingeniería Informática",
   subtitle: "Ingeniería del Software",
   institution: "Universidad de Sevilla (US)",
-  period: "Sep. 2019 - Jul. 2026",
+  period: "Sep. 2019 - Jul. 2024",
 };
 
-export const languages = ["Español: Nativo", "Inglés: B1"];
-
 export const navItems: NavItem[] = [
-  { label: "Inicio", href: "#inicio" },
-  { label: "Perfil", href: "#perfil" },
-  { label: "Experiencia", href: "#experiencia" },
+  { label: "Sobre mí", href: "#sobre-mi" },
   { label: "Proyectos", href: "#proyectos" },
-  { label: "Competencias", href: "#competencias" },
-  { label: "Formación", href: "#educacion" },
-  { label: "Idiomas", href: "#idiomas" },
+  { label: "Habilidades", href: "#competencias" },
 ];

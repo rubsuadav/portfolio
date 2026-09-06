@@ -3,7 +3,6 @@ import { LazySection } from "@/components/lazy-section";
 import { EducationSection } from "@/components/portfolio/education-section";
 import { ExperienceSection } from "@/components/portfolio/experience-section";
 import { HeroSection } from "@/components/portfolio/hero-section";
-import { LanguagesSection } from "@/components/portfolio/languages-section";
 import { PortfolioShell } from "@/components/portfolio/portfolio-shell";
 import { ProfileSection } from "@/components/portfolio/profile-section";
 import { ProjectsSection } from "@/components/portfolio/projects-section";
@@ -13,7 +12,6 @@ import {
   certifications,
   education,
   experience,
-  languages,
   metrics,
   profile,
   projects,
@@ -51,9 +49,6 @@ export default function Home() {
       </LazySection>
       <LazySection id="competencias" threshold={0.2}>
         <SkillsSection groups={skills} />
-      </LazySection>
-      <LazySection id="idiomas" threshold={0.2}>
-        <LanguagesSection items={languages} />
       </LazySection>
     </PortfolioShell>
   );
