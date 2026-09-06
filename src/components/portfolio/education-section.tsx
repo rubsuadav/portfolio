@@ -15,11 +15,11 @@ export function EducationSection({
 }: EducationSectionProps) {
   return (
     <section className={styles.educationSection} id="formacion">
-      <SectionHeading eyebrow="Formacion" title="Educacion y certificaciones" />
+      <SectionHeading eyebrow="Formación & certificaciones" />
 
       <div className={styles.educationSection__grid}>
         <article className={styles.educationSection__educationCard}>
-          <p className={styles.educationSection__label}>Educacion</p>
+          <p className={styles.educationSection__label}>Formación</p>
           <h3 className={styles.educationSection__title}>{education.title}</h3>
           <p className={styles.educationSection__subtitle}>{education.subtitle}</p>
           <p className={styles.educationSection__text}>{education.institution}</p>

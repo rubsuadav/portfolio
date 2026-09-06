@@ -10,7 +10,7 @@ interface ExperienceSectionProps {
 export function ExperienceSection({ items }: ExperienceSectionProps) {
   return (
     <section className={styles.experienceSection} id="experiencia">
-      <SectionHeading eyebrow="Experiencia" title="Trayectoria" />
+      <SectionHeading eyebrow="Experiencia" />
       <div className={styles.experienceSection__timeline}>
         {items.map((item) => (
           <article

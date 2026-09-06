@@ -1,22 +1,19 @@
 .educationSection {
   display: grid;
-  gap: 1rem;
+  gap: 1.25rem;
   scroll-margin-top: 104px;
 }
 
 .educationSection__grid {
   display: grid;
-  grid-template-columns: 0.9fr 1.1fr;
-  gap: 0.9rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
 }
 
 .educationSection__educationCard,
 .educationSection__certificationCard {
-  border-radius: 1.4rem;
-  border: 1px solid var(--border);
-  background: var(--card-bg);
-  box-shadow: var(--shadow-sm);
-  padding: 1.2rem;
+  border-left: 1px solid var(--border);
+  padding: 0.15rem 0 0.3rem 1rem;
 }
 
 .educationSection__educationCard {
@@ -47,7 +44,7 @@
 .educationSection__certificationList {
   display: grid;
   gap: 0.8rem;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
 }
 
 .educationSection__certificationCard {

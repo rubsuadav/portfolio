@@ -8,6 +8,7 @@ import { PortfolioShell } from "@/components/portfolio/portfolio-shell";
 import { ProfileSection } from "@/components/portfolio/profile-section";
 import { ProjectsSection } from "@/components/portfolio/projects-section";
 import { SkillsSection } from "@/components/portfolio/skills-section";
+import shellStyles from "@/components/portfolio/portfolio-shell.module.css";
 import {
   certifications,
   education,
@@ -31,23 +32,25 @@ export default function Home() {
           metrics={metrics}
         />
       </LazySection>
-      <LazySection id="perfil" threshold={0.2}>
-        <ProfileSection />
-      </LazySection>
-      <LazySection id="experiencia" threshold={0.2}>
-        <ExperienceSection items={experience} />
-      </LazySection>
+      <section id="sobre-mi" className={shellStyles.portfolioShell__about}>
+        <LazySection id="perfil" threshold={0.2}>
+          <ProfileSection />
+        </LazySection>
+        <LazySection id="experiencia" threshold={0.2}>
+          <ExperienceSection items={experience} />
+        </LazySection>
+        <LazySection id="formacion" threshold={0.2}>
+          <EducationSection
+            education={education}
+            certifications={certifications}
+          />
+        </LazySection>
+      </section>
       <LazySection id="proyectos" threshold={0.2}>
         <ProjectsSection items={projects} />
       </LazySection>
       <LazySection id="competencias" threshold={0.2}>
         <SkillsSection groups={skills} />
-      </LazySection>
-      <LazySection id="educacion" threshold={0.2}>
-        <EducationSection
-          education={education}
-          certifications={certifications}
-        />
       </LazySection>
       <LazySection id="idiomas" threshold={0.2}>
         <LanguagesSection items={languages} />

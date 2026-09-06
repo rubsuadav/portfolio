@@ -40,9 +40,7 @@ export function Navbar() {
 
         <Link
           className={`${styles.navbar__cta} ${isMenuOpen ? styles.navbar__ctaOpen : ""}`}
-          href={socialLinks[0].href}
-          target="_blank"
-          rel="noreferrer"
+          href={socialLinks[2].href}
           onClick={() => setIsMenuOpen(false)}
         >
           Contacto

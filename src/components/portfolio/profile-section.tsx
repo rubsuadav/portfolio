@@ -5,7 +5,10 @@ import styles from "./profile-section.module.css";
 export function ProfileSection() {
   return (
     <section className={styles.profileSection} id="perfil">
-      <SectionHeading eyebrow="Perfil" title="Propuesta de valor" />
+      <SectionHeading
+        eyebrow="Sobre mí"
+        title="Aprendiendo rápido, construyendo productos completos de principio a fin."
+      />
       <div className={styles.profileSection__contentCard}>
         <p className={styles.profileSection__paragraph}>
           He trabajado con <strong>Vue.js</strong>, <strong>Angular</strong>,{" "}
