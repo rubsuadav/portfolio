@@ -54,6 +54,7 @@ export function HeroSection({
               <strong className={styles.heroSection__metricValue}>
                 <SlotCounter
                   value={metric.value}
+                  isSeparatorCharacter={null}
                   animateOnVisible={{
                     triggerOnce: false,
                     rootMargin: "0px 0px -10% 0px"
