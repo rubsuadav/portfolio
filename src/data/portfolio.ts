@@ -223,4 +223,5 @@ export const navItems: NavItem[] = [
   { label: "Proyectos", href: "#proyectos" },
   { label: "Habilidades", href: "#competencias" },
   { label: "Contacto", href: "mailto:rsuarezdavid@gmail.com" },
+  { label: "Descargar CV", href: "#descargar-cv", isDownload: true },
 ];
