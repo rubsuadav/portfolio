@@ -100,7 +100,6 @@
   .navbar__links {
     justify-content: flex-start;
   }
-
 }
 
 @media (max-width: 600px) {
@@ -146,5 +145,4 @@
     background: rgba(79, 158, 255, 0.08);
     border-color: rgba(79, 158, 255, 0.12);
   }
-
 }

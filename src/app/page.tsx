@@ -23,13 +23,11 @@ export default function Home() {
   return (
     <PortfolioShell>
       <Navbar />
-      <LazySection id="inicio" threshold={0.1}>
-        <HeroSection
-          profile={profile}
-          socialLinks={socialLinks}
-          metrics={metrics}
-        />
-      </LazySection>
+      <HeroSection
+        profile={profile}
+        socialLinks={socialLinks}
+        metrics={metrics}
+      />
       <section id="sobre-mi" className={shellStyles.portfolioShell__about}>
         <LazySection id="perfil" threshold={0.2}>
           <ProfileSection />
