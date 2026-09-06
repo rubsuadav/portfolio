@@ -27,5 +27,5 @@
 
 .portfolioShell__about {
   display: grid;
-  gap: clamp(3.5rem, 7vw, 6.5rem);
+  gap: 4rem;
 }
