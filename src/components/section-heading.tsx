@@ -13,8 +13,8 @@ export function SectionHeading({
 }: SectionHeadingProps) {
   return (
     <div className={styles.sectionHeading}>
-      <span className={styles.sectionHeading__eyebrow}>{eyebrow}</span>
-      {title ? <h2 className={styles.sectionHeading__title}>{title}</h2> : null}
+      <h1 className={styles.sectionHeading__eyebrow}>{eyebrow}</h1>
+      {title ? <h3 className={styles.sectionHeading__title}>{title}</h3> : null}
       {description ? (
         <p className={styles.sectionHeading__description}>{description}</p>
       ) : null}
