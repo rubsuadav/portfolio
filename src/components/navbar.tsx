@@ -10,6 +10,14 @@ import { NavLink } from "./nav-link";
 export function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  const firstName = profile.name;
+  const lastName = profile.lastName;
+
+  const firstLetterFirstLastName = lastName.charAt(0);
+  const firstLetterSecondLastName = lastName.split(" ")[1]?.charAt(0) || "";
+
+  const result = firstName  + " " + firstLetterFirstLastName + ". " + firstLetterSecondLastName + ".";
+
   return (
     <div className={styles.navbar}>
       <header className={styles.navbar__container}>
@@ -24,7 +32,7 @@ export function Navbar() {
         </button>
 
         <NavLink href="#inicio" className={styles.navbar__brand}>
-          {profile.name + " " + profile.lastName.charAt(0) + "."}
+          {result}
         </NavLink>
 
         <nav
