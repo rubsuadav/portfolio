@@ -9,7 +9,8 @@ import { SkillGroup } from "@/types/skill-group";
 import { SocialLink } from "@/types/social-link";
 
 export const profile: Profile = {
-  name: "RUBÉN SUÁREZ DAVID",
+  name: "Rubén",
+  lastName: "Suárez David",
   title: "Junior Fullstack Developer",
   summary:
     "Full Stack Developer con experiencia en Vue.js, Angular, Node.js, TypeScript y MongoDB. Diseño APIs REST optimizadas, automatizo pruebas y construyo herramientas Open Source con foco en escalabilidad, mantenibilidad y entrega continua.",
