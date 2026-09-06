@@ -12,7 +12,7 @@ interface SkillsSectionProps {
 export function SkillsSection({ groups }: SkillsSectionProps) {
   return (
     <section className={styles.skillsSection} id="competencias">
-      <SectionHeading eyebrow="Habilidades" title="Stack tecnico" />
+      <SectionHeading eyebrow="Habilidades" title="Stack técnico" />
       <div className={styles.skillsSection__grid}>
         {groups.map((group) => (
           <article key={group.title} className={styles.skillsSection__card}>
