@@ -28,13 +28,16 @@ export default function Home() {
         socialLinks={socialLinks}
         metrics={metrics}
       />
+      <hr />
       <section id="sobre-mi" className={shellStyles.portfolioShell__about}>
         <LazySection id="perfil" threshold={0.2}>
           <ProfileSection />
         </LazySection>
+        <hr />
         <LazySection id="experiencia" threshold={0.2}>
           <ExperienceSection items={experience} />
         </LazySection>
+        <hr />
         <LazySection id="formacion" threshold={0.2}>
           <EducationSection
             educations={educations}
@@ -42,9 +45,11 @@ export default function Home() {
           />
         </LazySection>
       </section>
+      <hr />
       <LazySection id="proyectos" threshold={0.2}>
         <ProjectsSection items={projects} />
       </LazySection>
+      <hr />
       <LazySection id="competencias" threshold={0.2}>
         <SkillsSection groups={skills} />
       </LazySection>
