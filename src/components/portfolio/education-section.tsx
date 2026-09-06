@@ -5,27 +5,34 @@ import { Education } from "@/types/education";
 import styles from "./education-section.module.css";
 
 interface EducationSectionProps {
-  education: Education;
+  educations: Education[];
   certifications: CertificationItem[];
 }
 
 export function EducationSection({
-  education,
+  educations,
   certifications,
 }: EducationSectionProps) {
   return (
     <section className={styles.educationSection} id="formacion">
-      <SectionHeading eyebrow="Formación & certificaciones" />
+      <SectionHeading eyebrow="Formación" />
 
-      <div className={styles.educationSection__grid}>
-        <article className={styles.educationSection__educationCard}>
-          <p className={styles.educationSection__label}>Formación</p>
-          <h3 className={styles.educationSection__title}>{education.title}</h3>
-          <p className={styles.educationSection__subtitle}>{education.subtitle}</p>
-          <p className={styles.educationSection__text}>{education.institution}</p>
-          <p className={styles.educationSection__text}>{education.period}</p>
-        </article>
+      <div className={styles.educationSection__educationGrid}>
+        {educations.map((item) => (
+          <article
+            key={`${item.title}-${item.institution}`}
+            className={styles.educationSection__educationCard}
+          >
+            <h3 className={styles.educationSection__title}>{item.title}</h3>
+            <p className={styles.educationSection__subtitle}>{item.subtitle}</p>
+            <p className={styles.educationSection__text}>{item.institution}</p>
+            <p className={styles.educationSection__text}>{item.period}</p>
+          </article>
+        ))}
+      </div>
 
+      <div className={styles.educationSection__certifications}>
+        <p className={styles.educationSection__label}>Certificaciones</p>
         <div className={styles.educationSection__certificationList}>
           {certifications.map((certification) => (
             <article
@@ -33,11 +40,19 @@ export function EducationSection({
               className={styles.educationSection__certificationCard}
             >
               <div>
-                <p className={styles.educationSection__label}>{certification.issuer}</p>
-                <h3 className={styles.educationSection__title}>{certification.title}</h3>
+                <p className={styles.educationSection__label}>
+                  {certification.issuer}
+                </p>
+                <h3 className={styles.educationSection__title}>
+                  {certification.title}
+                </h3>
               </div>
-              <p className={styles.educationSection__meta}>{certification.period}</p>
-              <p className={styles.educationSection__text}>{certification.description}</p>
+              <p className={styles.educationSection__meta}>
+                {certification.period}
+              </p>
+              <p className={styles.educationSection__text}>
+                {certification.description}
+              </p>
             </article>
           ))}
         </div>

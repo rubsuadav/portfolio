@@ -10,7 +10,7 @@ import { SkillsSection } from "@/components/portfolio/skills-section";
 import shellStyles from "@/components/portfolio/portfolio-shell.module.css";
 import {
   certifications,
-  education,
+  educations,
   experience,
   metrics,
   profile,
@@ -37,7 +37,7 @@ export default function Home() {
         </LazySection>
         <LazySection id="formacion" threshold={0.2}>
           <EducationSection
-            education={education}
+            educations={educations}
             certifications={certifications}
           />
         </LazySection>

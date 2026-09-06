@@ -211,12 +211,20 @@ export const certifications: CertificationItem[] = [
   },
 ];
 
-export const education: Education = {
-  title: "Grado en Ingeniería Informática",
-  subtitle: "Ingeniería del Software",
-  institution: "Universidad de Sevilla (US)",
-  period: "Sep. 2019 - Jul. 2024",
-};
+export const educations: Education[] = [
+    {
+    title: "Curso de Nanotraining en Inteligencia Artificial",
+    subtitle: "Área: Informática, Tecnología de la Información y Robótica",
+    institution: "Escuela de Empresa - Universidad de Nebrija",
+    period: "Abr. 2026 - Oct. 2026",
+  },
+  {
+    title: "Grado en Ingeniería Informática",
+    subtitle: "Ingeniería del Software",
+    institution: "Universidad de Sevilla (US)",
+    period: "Sep. 2019 - Jul. 2024",
+  },
+];
 
 export const navItems: NavItem[] = [
   { label: "Sobre mí", href: "#sobre-mi" },

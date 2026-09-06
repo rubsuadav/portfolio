@@ -4,7 +4,7 @@
   scroll-margin-top: 104px;
 }
 
-.educationSection__grid {
+.educationSection__educationGrid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1rem;
@@ -47,13 +47,18 @@
   grid-template-columns: 1fr;
 }
 
+.educationSection__certifications {
+  display: grid;
+  gap: 0.8rem;
+}
+
 .educationSection__certificationCard {
   display: grid;
   gap: 0.6rem;
 }
 
 @media (max-width: 980px) {
-  .educationSection__grid {
+  .educationSection__educationGrid {
     grid-template-columns: 1fr;
   }
 }
