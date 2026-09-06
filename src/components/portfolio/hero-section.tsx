@@ -18,11 +18,21 @@ export function HeroSection({
   socialLinks,
   metrics,
 }: HeroSectionProps) {
+  const firstName = profile.name;
+  const lastName = profile.lastName;
+  const fullName = firstName + " " + lastName;
+
+  const firstLetterName = firstName.charAt(0);
+  const firstLetterFirstLastName = lastName.charAt(0);
+  const firstLetterSecondLastName = lastName.split(" ")[1]?.charAt(0) || "";
+
+  const initials =
+    firstLetterName + firstLetterFirstLastName + firstLetterSecondLastName;
+
   return (
     <section className={styles.heroSection} id="inicio">
       <div className={styles.heroSection__introCard}>
-        <p className={styles.heroSection__kicker}>Portfolio profesional</p>
-        <h1 className={styles.heroSection__title}>{profile.name}</h1>
+        <h1 className={styles.heroSection__title}>{fullName}</h1>
         <p className={styles.heroSection__role}>{profile.title}</p>
         <p className={styles.heroSection__summary}>{profile.summary}</p>
 
@@ -57,7 +67,7 @@ export function HeroSection({
                   isSeparatorCharacter={null}
                   animateOnVisible={{
                     triggerOnce: false,
-                    rootMargin: "0px 0px -10% 0px"
+                    rootMargin: "0px 0px -10% 0px",
                   }}
                 />
               </strong>
@@ -71,7 +81,7 @@ export function HeroSection({
 
       <aside className={styles.heroSection__profileCard}>
         <div className={styles.heroSection__avatar} aria-hidden="true">
-          RS
+          {initials}
         </div>
 
         <div className={styles.heroSection__location}>

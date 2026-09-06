@@ -23,14 +23,6 @@
   padding: clamp(1.6rem, 3vw, 2.4rem);
 }
 
-.heroSection__kicker {
-  text-transform: uppercase;
-  letter-spacing: 0.17em;
-  font-weight: 700;
-  color: var(--accent);
-  font-size: 0.72rem;
-}
-
 .heroSection__title {
   margin-top: 0.8rem;
   line-height: 0.96;
