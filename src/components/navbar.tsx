@@ -1,10 +1,9 @@
 "use client";
 
 import { useState } from "react";
-import { navItems, socialLinks } from "@/data/portfolio";
+import { navItems, profile } from "@/data/portfolio";
 
 import styles from "./navbar.module.css";
-import Link from "next/link";
 import { NavLink } from "./nav-link";
 
 export function Navbar() {
@@ -23,6 +22,10 @@ export function Navbar() {
           <span />
         </button>
 
+        <NavLink href="#inicio" className={styles.navbar__brand}>
+          {profile.name + " " + profile.lastName.charAt(0) + "."}
+        </NavLink>
+
         <nav
           className={`${styles.navbar__links} ${isMenuOpen ? styles.navbar__linksOpen : ""}`}
           onClick={() => setIsMenuOpen(false)}
@@ -37,14 +40,6 @@ export function Navbar() {
             </NavLink>
           ))}
         </nav>
-
-        <Link
-          className={`${styles.navbar__cta} ${isMenuOpen ? styles.navbar__ctaOpen : ""}`}
-          href={socialLinks[2].href}
-          onClick={() => setIsMenuOpen(false)}
-        >
-          Contacto
-        </Link>
       </header>
     </div>
   );

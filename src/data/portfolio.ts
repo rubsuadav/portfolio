@@ -222,4 +222,5 @@ export const navItems: NavItem[] = [
   { label: "Sobre mí", href: "#sobre-mi" },
   { label: "Proyectos", href: "#proyectos" },
   { label: "Habilidades", href: "#competencias" },
+  { label: "Contacto", href: "mailto:rsuarezdavid@gmail.com" },
 ];
