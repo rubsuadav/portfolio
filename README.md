@@ -78,6 +78,6 @@ La página principal compone las secciones desde `src/app/page.tsx`. Para actual
 
 ## 🚀 Despliegue
 
-El portfolio está desplegado en [Vercel](https://vercel.com/) y disponible públicamente en [portfolio-rubsuadavs-projects.vercel.app](https://portfolio-rubsuadavs-projects.vercel.app/).
+El portfolio está desplegado en [Vercel](https://vercel.com/) y disponible públicamente en [https://ruben-suarez-dev.vercel.app/](https://ruben-suarez-dev.vercel.app/).
 
 Para compartir temporalmente el entorno local durante el desarrollo, ejecuta primero `npm run dev` y después `npm run deploy-pre` en otra terminal.
