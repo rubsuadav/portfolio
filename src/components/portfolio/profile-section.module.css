@@ -6,9 +6,13 @@
 
 .profileSection__contentCard {
   max-width: 70ch;
-  padding: 0;
+  padding: 1.3rem 1.2rem;
   display: grid;
   gap: 1rem;
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+  background: var(--card-bg);
+  box-shadow: var(--shadow-sm);
 }
 
 .profileSection__paragraph {

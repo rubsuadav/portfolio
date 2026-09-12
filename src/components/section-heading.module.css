@@ -5,15 +5,14 @@
 }
 
 .sectionHeading__eyebrow {
-  /* display: inline-flex; */
   text-transform: uppercase;
-  /* letter-spacing: 0.16em; */
+  letter-spacing: 0.08em;
   color: var(--accent);
   font-weight: 700;
 }
 
 .sectionHeading__title {
-  /* letter-spacing: -0.03em; */
+  letter-spacing: -0.02em;
   line-height: 1.08;
 }
 
