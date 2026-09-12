@@ -2,6 +2,7 @@ import { Navbar } from "@/components/navbar";
 import { LazySection } from "@/components/lazy-section";
 import { EducationSection } from "@/components/portfolio/education-section";
 import { ExperienceSection } from "@/components/portfolio/experience-section";
+import { Footer } from "@/components/portfolio/footer";
 import { HeroSection } from "@/components/portfolio/hero-section";
 import { PortfolioShell } from "@/components/portfolio/portfolio-shell";
 import { ProfileSection } from "@/components/portfolio/profile-section";
@@ -13,6 +14,7 @@ import {
   educations,
   experience,
   metrics,
+  navItems,
   profile,
   projects,
   skills,
@@ -53,6 +55,11 @@ export default function Home() {
       <LazySection id="competencias" threshold={0.2}>
         <SkillsSection groups={skills} />
       </LazySection>
+      <Footer
+        fullName={`${profile.name} ${profile.lastName}`}
+        navigationItems={navItems}
+        socialLinks={socialLinks}
+      />
     </PortfolioShell>
   );
 }
