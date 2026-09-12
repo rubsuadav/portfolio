@@ -11,14 +11,14 @@
 
 .experienceSection__card {
   position: relative;
-  border-left: 1px solid var(--border);
-  padding: 0.15rem 0 0.45rem 1.1rem;
+  border-left: 1px solid rgba(125, 168, 255, 0.38);
+  padding: 0.2rem 0 0.55rem 1.1rem;
   display: grid;
   gap: 0.55rem;
 }
 
 .experienceSection__card:first-child {
-  border-left-color: var(--accent);
+  border-left-color: rgba(182, 204, 255, 0.88);
 }
 
 .experienceSection__header {

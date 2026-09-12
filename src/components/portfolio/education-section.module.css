@@ -12,7 +12,7 @@
 
 .educationSection__educationCard,
 .educationSection__certificationCard {
-  border-left: 1px solid var(--border);
+  border-left: 1px solid rgba(125, 168, 255, 0.36);
   padding: 0.15rem 0 0.3rem 1rem;
 }
 
@@ -24,8 +24,9 @@
 
 .educationSection__label {
   text-transform: uppercase;
-  /* letter-spacing: 0.13em; */
+  letter-spacing: 0.08em;
   color: var(--accent);
+  font-weight: 700;
 }
 
 .educationSection__title {
