@@ -212,7 +212,7 @@ export const certifications: CertificationItem[] = [
 ];
 
 export const educations: Education[] = [
-    {
+  {
     title: "Curso de Nanotraining en Inteligencia Artificial",
     subtitle: "Área: Informática, Tecnología de la Información y Robótica",
     institution: "Escuela de Empresa - Universidad de Nebrija",
