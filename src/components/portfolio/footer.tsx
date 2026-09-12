@@ -1,3 +1,5 @@
+"use client";
+
 import { NavItem } from "@/types/nav-item";
 import { SocialLink } from "@/types/social-link";
 
