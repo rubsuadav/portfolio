@@ -1,19 +1,20 @@
 :root {
-  --paper: #05080f;
-  --paper-secondary: #0b111c;
-  --paper-tertiary: #121b29;
-  --ink: #e7edf8;
-  --muted: #9caac0;
-  --border: rgba(124, 162, 224, 0.24);
-  --accent: #7da8ff;
-  --accent-strong: #4f73d1;
-  --accent-subtle: rgba(125, 168, 255, 0.14);
-  --shadow-sm: 0 14px 28px rgba(1, 5, 14, 0.46);
-  --shadow-md: 0 24px 52px rgba(1, 5, 14, 0.62);
+  --paper: #101719;
+  --paper-secondary: #172326;
+  --paper-tertiary: #223337;
+  --ink: #f5f1e8;
+  --muted: #b8c5c1;
+  --border: rgba(146, 202, 191, 0.28);
+  --accent: #72d1c0;
+  --accent-strong: #3d9f98;
+  --accent-warm: #d7a474;
+  --accent-subtle: rgba(114, 209, 192, 0.14);
+  --shadow-sm: 0 14px 28px rgba(3, 12, 13, 0.34);
+  --shadow-md: 0 24px 52px rgba(3, 12, 13, 0.48);
   --card-bg: linear-gradient(
     160deg,
-    rgba(18, 30, 48, 0.74),
-    rgba(10, 17, 30, 0.9)
+    rgba(34, 51, 55, 0.84),
+    rgba(19, 30, 32, 0.94)
   );
 }
 
@@ -35,9 +36,9 @@ body {
   flex-direction: column;
   color: var(--ink);
   background:
-    radial-gradient(circle at 15% -10%, rgba(104, 133, 196, 0.18), transparent 32%),
-    radial-gradient(circle at 85% 0%, rgba(76, 108, 173, 0.12), transparent 30%),
-    linear-gradient(180deg, #04070d 0%, #050912 45%, #060b15 100%);
+    radial-gradient(circle at 15% -10%, rgba(114, 209, 192, 0.16), transparent 32%),
+    radial-gradient(circle at 85% 0%, rgba(215, 164, 116, 0.12), transparent 30%),
+    linear-gradient(180deg, #0d1416 0%, #10191b 45%, #121d1f 100%);
   font-family: var(--font-manrope), "Segoe UI", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -64,12 +65,12 @@ body::before {
   inset: 0;
   pointer-events: none;
   background:
-    radial-gradient(circle at 12% 12%, rgba(142, 173, 228, 0.12), transparent 27%),
-    radial-gradient(circle at 88% 8%, rgba(88, 122, 186, 0.1), transparent 24%),
+    radial-gradient(circle at 12% 12%, rgba(114, 209, 192, 0.1), transparent 27%),
+    radial-gradient(circle at 88% 8%, rgba(215, 164, 116, 0.08), transparent 24%),
     repeating-linear-gradient(
       110deg,
-      rgba(210, 223, 255, 0.04) 0px,
-      rgba(210, 223, 255, 0.04) 1px,
+      rgba(245, 241, 232, 0.035) 0px,
+      rgba(245, 241, 232, 0.035) 1px,
       transparent 1px,
       transparent 18px
     );
@@ -82,8 +83,8 @@ body::after {
   inset: 0;
   pointer-events: none;
   background:
-    radial-gradient(circle at 50% -10%, rgba(15, 20, 32, 0), rgba(5, 8, 15, 0.55) 55%),
-    linear-gradient(180deg, rgba(5, 8, 15, 0.06), rgba(5, 8, 15, 0.55));
+    radial-gradient(circle at 50% -10%, rgba(16, 23, 25, 0), rgba(16, 23, 25, 0.28) 55%),
+    linear-gradient(180deg, rgba(16, 23, 25, 0.04), rgba(16, 23, 25, 0.3));
   mix-blend-mode: normal;
 }
 
@@ -93,7 +94,7 @@ a {
 }
 
 ::selection {
-  background: rgba(125, 168, 255, 0.32);
+  background: rgba(114, 209, 192, 0.32);
   color: var(--ink);
 }
 
@@ -103,7 +104,7 @@ hr {
   background: linear-gradient(
     90deg,
     transparent,
-    rgba(125, 168, 255, 0.35),
+    rgba(114, 209, 192, 0.35),
     transparent
   );
 }
