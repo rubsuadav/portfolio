@@ -13,7 +13,7 @@ export const profile: Profile = {
   lastName: "Suárez David",
   title: "Junior Fullstack Developer",
   summary:
-    "Full Stack Developer con experiencia en Vue.js, Angular, Node.js, TypeScript y MongoDB. Diseño APIs REST optimizadas, automatizo pruebas y construyo herramientas Open Source con foco en escalabilidad, mantenibilidad y entrega continua.",
+    "Full Stack Developer con experiencia en Vue.js, Angular, Node.js, TypeScript y MongoDB. Diseño APIs REST optimizadas, automatizo pruebas y publico herramientas Open Source con más de 1.100 descargas en NPM. Especializado en testing automatizado, CI/CD, Clean Code, principios SOLID y Clean Architecture en entornos ágiles.",
   location: "Sevilla, España",
 };
 
@@ -41,7 +41,9 @@ export const experience: ExperienceItem[] = [
       "Desarrollo de nuevas funcionalidades en producto, con foco en calidad de implementación, colaboración con equipo y evolución sostenida de la plataforma.",
     achievements: [
       "Desarrollo de nuevas funcionalidades utilizando Vue.js, Node.js, TypeScript, Express y MongoDB.",
-      "Diseño y optimización de APIs REST y modelos de datos para mejorar eficiencia y mantenibilidad.",
+      "Diseño y optimización de APIs REST y modelos de datos en MongoDB, reduciendo el tiempo de respuesta de consultas en un 25% y los errores 503 por timeout en un 20%.",
+      "Implementación de tests unitarios y de integración, elevando la cobertura de pruebas al 92% y reduciendo bugs en producción en un 25%.",
+      "Desarrollo de funcionalidades backend aplicando Clean Code, principios SOLID y Clean Architecture.",
       "Participación activa en planificación, desarrollo, testing y despliegue CI/CD bajo metodologías Ágiles.",
       "Colaboración en code reviews, pair programming y cultura DevOps para sostener releases estables.",
     ],
@@ -178,6 +180,16 @@ export const skills: SkillGroup[] = [
       { label: "Arquitectura escalable", icon: "architecture" },
     ],
   },
+  {
+    title: "Buenas prácticas y arquitectura",
+    items: [
+      { label: "Clean Code", icon: "architecture" },
+      { label: "Principios SOLID", icon: "architecture" },
+      { label: "Clean Architecture", icon: "architecture" },
+      { label: "Code Review", icon: "github" },
+      { label: "Pair Programming", icon: "pairing" },
+    ],
+  },
 ];
 
 export const certifications: CertificationItem[] = [
@@ -217,13 +229,13 @@ export const educations: Education[] = [
     subtitle: "Área: Informática, Tecnología de la Información y Robótica",
     institution: "Escuela de Empresa - Universidad de Nebrija",
     period: "Abr. 2026 - Oct. 2026",
-    mark: "9",
+    mark: "Sobresaliente",
   },
   {
     title: "Grado en Ingeniería Informática",
     subtitle: "Ingeniería del Software",
     institution: "Universidad de Sevilla (US)",
-    period: "Sep. 2019 - Jul. 2024",
+    period: "Sep. 2019 - Jul. 2026",
     mark: "6.68",
   },
 ];
