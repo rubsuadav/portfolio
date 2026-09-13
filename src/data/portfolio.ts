@@ -228,7 +228,7 @@ export const educations: Education[] = [
     title: "Curso de Nanotraining en Inteligencia Artificial",
     subtitle: "Área: Informática, Tecnología de la Información y Robótica",
     institution: "Escuela de Empresa - Universidad de Nebrija",
-    period: "Abr. 2026 - Oct. 2026",
+    period: "Abr. 2026 - Sep. 2026",
     mark: "Sobresaliente",
   },
   {
