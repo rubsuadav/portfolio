@@ -68,7 +68,9 @@
   color: var(--accent);
   font-size: 0.86rem;
   font-weight: 700;
-  transition: border-color 160ms ease, background 160ms ease;
+  transition:
+    border-color 160ms ease,
+    background 160ms ease;
 }
 
 .projectsSection__link:hover {

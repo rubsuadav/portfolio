@@ -3,12 +3,15 @@
 This is a Next.js 16 app using the App Router. It is a monorepo with a single package, `app`, which contains the Next.js app.
 
 # Commands
+
 - Dev server: `npm run dev`
 - Build: `npm run build`
 - Start: `npm start`
+- Format: `npm run format` --> Run Prettier to format the code according to the configured style.
 - Lint: `npm run lint` --> Run ESLint to check for code style issues based on the ESLint configuration including Prettier rules.
 
 # Code Style
+
 - Use 2-space indentation
 - Preferred quote style: double quotes
 - Use BEM methodology for CSS class naming

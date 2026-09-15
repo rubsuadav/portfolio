@@ -20,8 +20,12 @@ export function ProjectsSection({ items }: ProjectsSectionProps) {
           <article key={project.title} className={styles.projectsSection__card}>
             <header className={styles.projectsSection__header}>
               <div className={styles.projectsSection__headingGroup}>
-                <h3 className={styles.projectsSection__title}>{project.title}</h3>
-                <p className={styles.projectsSection__period}>{project.period}</p>
+                <h3 className={styles.projectsSection__title}>
+                  {project.title}
+                </h3>
+                <p className={styles.projectsSection__period}>
+                  {project.period}
+                </p>
               </div>
               <div className={styles.projectsSection__links}>
                 {project.links.map((link) => (
@@ -40,7 +44,9 @@ export function ProjectsSection({ items }: ProjectsSectionProps) {
               </div>
             </header>
 
-            <p className={styles.projectsSection__description}>{project.description}</p>
+            <p className={styles.projectsSection__description}>
+              {project.description}
+            </p>
 
             <div
               className={styles.projectsSection__stack}
@@ -55,7 +61,10 @@ export function ProjectsSection({ items }: ProjectsSectionProps) {
 
             <ul className={styles.projectsSection__highlightList}>
               {project.highlights.map((highlight) => (
-                <li className={styles.projectsSection__highlight} key={highlight}>
+                <li
+                  className={styles.projectsSection__highlight}
+                  key={highlight}
+                >
                   {highlight}
                 </li>
               ))}

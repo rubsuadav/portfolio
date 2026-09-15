@@ -24,12 +24,19 @@ export function ExperienceSection({ items }: ExperienceSectionProps) {
                 </h3>
                 <p className={styles.experienceSection__type}>{item.type}</p>
               </div>
-              <span className={styles.experienceSection__period}>{item.period}</span>
+              <span className={styles.experienceSection__period}>
+                {item.period}
+              </span>
             </header>
-            <p className={styles.experienceSection__description}>{item.description}</p>
+            <p className={styles.experienceSection__description}>
+              {item.description}
+            </p>
             <ul className={styles.experienceSection__achievementList}>
               {item.achievements.map((achievement) => (
-                <li className={styles.experienceSection__achievement} key={achievement}>
+                <li
+                  className={styles.experienceSection__achievement}
+                  key={achievement}
+                >
                   {achievement}
                 </li>
               ))}

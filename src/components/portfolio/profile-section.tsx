@@ -19,8 +19,8 @@ export function ProfileSection() {
         </p>
         <p className={styles.profileSection__paragraph}>
           Tambien he impulsado iniciativas Open Source, integracion de servicios
-          de IA, testing con <strong>Jest</strong> y <strong>Supertest</strong>, y
-          practicas de <strong>CI/CD</strong> dentro de equipos agiles.
+          de IA, testing con <strong>Jest</strong> y <strong>Supertest</strong>,
+          y practicas de <strong>CI/CD</strong> dentro de equipos agiles.
         </p>
       </div>
     </section>

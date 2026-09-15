@@ -1,8 +1,8 @@
-'use client';
+"use client";
 
-import { ReactNode } from 'react';
-import { useIntersectionObserver } from '@/hooks/useIntersectionObserver';
-import styles from './lazy-section.module.css';
+import { ReactNode } from "react";
+import { useIntersectionObserver } from "@/hooks/useIntersectionObserver";
+import styles from "./lazy-section.module.css";
 
 interface LazySectionProps {
   children: ReactNode;
@@ -17,7 +17,7 @@ export function LazySection({
 }: LazySectionProps) {
   const { ref, isVisible } = useIntersectionObserver<HTMLDivElement>({
     threshold,
-    rootMargin: '50px',
+    rootMargin: "50px",
     triggerOnce: false,
   });
 
@@ -25,7 +25,7 @@ export function LazySection({
     <div
       ref={ref}
       id={id}
-      className={`${styles.lazySection} ${isVisible ? styles.lazySection__visible : ''}`}
+      className={`${styles.lazySection} ${isVisible ? styles.lazySection__visible : ""}`}
     >
       {children}
     </div>

@@ -4,7 +4,7 @@ import Image from "next/image";
 
 /**
  * Componente SkillIconImage - Renderiza un ícono SVG de habilidad
- * 
+ *
  * Arquitectura:
  * - Carga iconos desde public/icons/skills/ (assets estáticos)
  * - Soporta lazy loading nativo del navegador

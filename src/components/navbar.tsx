@@ -16,7 +16,13 @@ export function Navbar() {
   const firstLetterFirstLastName = lastName.charAt(0);
   const firstLetterSecondLastName = lastName.split(" ")[1]?.charAt(0) || "";
 
-  const result = firstName  + " " + firstLetterFirstLastName + ". " + firstLetterSecondLastName + ".";
+  const result =
+    firstName +
+    " " +
+    firstLetterFirstLastName +
+    ". " +
+    firstLetterSecondLastName +
+    ".";
 
   return (
     <div className={styles.navbar}>
@@ -57,7 +63,8 @@ export function Navbar() {
               >
                 {item.label}
               </NavLink>
-            ))}
+            ),
+          )}
         </nav>
       </header>
     </div>

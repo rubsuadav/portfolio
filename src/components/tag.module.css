@@ -10,7 +10,9 @@
   color: var(--ink);
   font-size: 0.86rem;
   font-weight: 600;
-  transition: border-color 160ms ease, background 160ms ease;
+  transition:
+    border-color 160ms ease,
+    background 160ms ease;
 }
 
 .tagBadge:hover {
