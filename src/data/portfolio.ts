@@ -194,6 +194,13 @@ export const skills: SkillGroup[] = [
 
 export const certifications: CertificationItem[] = [
   {
+    title: "Introducción a Claude Code",
+    issuer: "Anthropic",
+    period: "Sep. 2026",
+    description:
+      "Aprende a utilizar Claude Code como agente de codificación de IA: configura sus distintos entornos, crea prompts efectivos, trabaja con el flujo Explorar → Planificar → Codificar → Confirmar, gestiona el contexto y la memoria del proyecto, delega tareas mediante subagentes, conecta herramientas con MCP y automatiza controles mediante hooks.",
+  },
+  {
     title: "Construcción asistente de búsqueda con Node usando API de OpenAI",
     issuer: "LinkedIn Learning",
     period: "Ago. 2026",
