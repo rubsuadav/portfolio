@@ -6,7 +6,7 @@ This is a Next.js 16 app using the App Router. It is a monorepo with a single pa
 - Dev server: `npm run dev`
 - Build: `npm run build`
 - Start: `npm start`
-- Lint: `npm run lint`
+- Lint: `npm run lint` --> Run ESLint to check for code style issues based on the ESLint configuration including Prettier rules.
 
 # Code Style
 - Use 2-space indentation
