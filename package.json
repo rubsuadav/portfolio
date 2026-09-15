@@ -4,10 +4,11 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "npm run lint && next dev",
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
+    "format": "npx prettier --write .",
     "deploy-pre": "npx cloudflared --url http://localhost:3000"
   },
   "dependencies": {
@@ -25,6 +26,8 @@
     "babel-plugin-react-compiler": "1.0.0",
     "eslint": "^9",
     "eslint-config-next": "16.3.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.6",
     "typescript": "^5"
   },
   "engines": {
