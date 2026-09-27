@@ -29,6 +29,7 @@ export const metrics: Metric[] = [
   { value: "-20%", label: "errores 503 por timeout en APIs y consultas" },
   { value: "92%", label: "de cobertura alcanzada en tests" },
   { value: "+1.100", label: "descargas para express-api-rest-gen en NPM" },
+  { value: "+2.000", label: "descargas para querymongo en NPM" },
 ];
 
 export const experience: ExperienceItem[] = [
@@ -64,6 +65,34 @@ export const experience: ExperienceItem[] = [
 ];
 
 export const projects: ProjectItem[] = [
+  {
+    title: "CLI conversora de queries SQL a MongoDB",
+    period: "Sep. 2026 - Actualidad",
+    description:
+      "Herramienta Open Source para convertir queries SQL a consultas MongoDB de manera automática.",
+    highlights: [
+      "Publicada en NPM con más de 2.000 descargas.",
+      "Convierte queries SQL complejas (SELECT, INSERT, UPDATE, DELETE) con soporte para INNER/LEFT JOINs entre colecciones.",
+      "Manejo completo de proyecciones, filtros avanzados (LIKE, IN, operadores complejos), agregaciones y ORDER BY con múltiples campos.",
+      "CLI interactiva y API TypeScript para integración directa en proyectos.",
+    ],
+    stack: [
+      { label: "TypeScript", icon: "typescript" },
+      { label: "MongoDB", icon: "mongodb" },
+      { label: "PostgreSQL", icon: "postgresql" },
+      { label: "MySQL", icon: "mysql" },
+    ],
+    links: [
+      {
+        label: "GitHub",
+        href: "https://github.com/rubsuadav/querymongo",
+      },
+      {
+        label: "NPM",
+        href: "https://www.npmjs.com/package/querymongo",
+      },
+    ],
+  },
   {
     title: "CLI para Generación de APIs Express",
     period: "Ago. 2025 - Jul. 2026",
