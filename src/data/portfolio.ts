@@ -14,7 +14,7 @@ export const profile: Profile = {
   title: "Junior Fullstack Developer",
   summary:
     "Full Stack Developer con experiencia en Vue.js, Angular, Node.js, TypeScript y MongoDB. Diseño APIs REST optimizadas, automatizo pruebas y publico herramientas Open Source con más de 1.100 descargas en NPM. Especializado en testing automatizado, CI/CD, Clean Code, principios SOLID y Clean Architecture en entornos ágiles.",
-  location: "Sevilla, España",
+  location: "Madrid, España",
 };
 
 export const socialLinks: SocialLink[] = [
@@ -36,7 +36,7 @@ export const experience: ExperienceItem[] = [
   {
     title: "FULL STACK DEVELOPER",
     company: "Bipi",
-    period: "Oct. 2025 - Actualidad",
+    period: "Oct. 2025 - Oct. 2026",
     type: "Jornada completa",
     description:
       "Desarrollo de nuevas funcionalidades en producto, con foco en calidad de implementación, colaboración con equipo y evolución sostenida de la plataforma.",
@@ -67,7 +67,7 @@ export const experience: ExperienceItem[] = [
 export const projects: ProjectItem[] = [
   {
     title: "CLI conversora de queries SQL a MongoDB",
-    period: "Sep. 2026 - Actualidad",
+    period: "Sep. 2026 - Oct. 2026",
     description:
       "Herramienta Open Source para convertir queries SQL a consultas MongoDB de manera automática.",
     highlights: [
@@ -223,6 +223,21 @@ export const skills: SkillGroup[] = [
 
 export const certifications: CertificationItem[] = [
   {
+    title: "Curso de MongoDB Essentials",
+    issuer: "LinkedIn Learning",
+    period: "Oct. 2026",
+    description:
+      "Curso práctico de MongoDB centrado en operaciones CRUD, agregaciones, gestión de controladores y administración de bases de datos NoSQL para entornos de producción.",
+  },
+  {
+    title:
+      "Aprender Full-Stack JavaScript Development: MongoDB, Node, and React",
+    issuer: "LinkedIn Learning",
+    period: "Oct. 2026",
+    description:
+      "Aprende a desarrollar aplicaciones full-stack con JavaScript, MongoDB, Node.js y React.",
+  },
+  {
     title: "Introducción a Claude Code",
     issuer: "Anthropic",
     period: "Sep. 2026",
@@ -264,7 +279,7 @@ export const educations: Education[] = [
     title: "Curso de Nanotraining en Inteligencia Artificial",
     subtitle: "Área: Informática, Tecnología de la Información y Robótica",
     institution: "Escuela de Empresa - Universidad de Nebrija",
-    period: "Abr. 2026 - Sep. 2026",
+    period: "Abr. 2026 - Oct. 2026",
     mark: "Sobresaliente",
   },
   {
